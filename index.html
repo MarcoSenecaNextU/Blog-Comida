@@ -15,55 +15,143 @@
 	
 	<body>
 		<div class="row color">
-			<div class="large-3 medium-3 small-3 columns">
-				<h2 class="text-center">Gastronomia</h2>
-				<p class="text-right">comer es vivir</p>
+			<!--Titulo y slogan para pantallas "large" y "medium"-->
+			<div class="large-4 medium-4 columns hide-for-small-only">
+				<h1 class="text-right yellow">YucaPan</h1>
+				<p class="text-right yellow">Barriga llena</p>
+			</div>
+			<!--Titulo y slogan para pantallas "small"-->
+			<div class="small-12 columns show-for-small-only">
+				<br/>
+				<h1 class="text-center yellow">YucaPan</h1>
+				<p class="text-center yellow">Barriga llena</p>
 			</div>
 		</div>
 		<div class="row color">
 			<div class="large-4 medium-4 columns">
 				<div class="callout">
+					<!--Buscador utilizando componentes de Foundation-->
 					<div class="input-group">
-						
 						<input type="text">
 						<div class="input-group-button">
-							<input type="submit" class="button" value="Buscar">
+							<input type="submit" class="success button" value="Buscar">
 						</div>
 					</div>
+					<!--Menu utilizando componentes de Foundation-->
 					<ul class="vertical menu">
-						<li><a class="button hollow" href="#"><i class="fi-star"></i> <span>Inicio</span></a></li>
-						<li><a class="button hollow" href="#"><i class="fi-lightbulb"></i> <span>Mis platos</span></a></li>
-						<li><a class="button hollow" href="#"><i class="fi-book"></i> <span>Recetas</span></a></li>
+						<li><a class="success button hollow" href="#"><i class="fi-star"></i> <span>Inicio</span></a><br/></li>
+						<li><a class="success button hollow" href="#"><i class="fi-lightbulb"></i> <span>Mis platos</span></a><br/></li>
+						<li><a class="success button hollow" href="#"><i class="fi-book"></i> <span>Recetas</span></a></li>
 					</ul>
+					<!--Seccion favoritos que se oculta en pantallas "small"-->
+					<div class="hide-for-small-only">
+						<br/>
+						<h4>Favoritos:</h4>
+						<div class="row">
+							<div class="large-4 medium-4 columns">
+								<img class="thumbnail" src="img/tortarosada.jpg"/>
+							</div>
+							<div class="large-4 medium-4 columns">
+								<img class="thumbnail" src="img/hallaca.jpg"/>
+							</div>
+							<div class="large-4 medium-4 columns">
+								<img class="thumbnail" src="img/pastasalsa.jpg"/>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="large-4 medium-4 columns">
+								<img class="thumbnail" src="img/arrozcanela.jpg"/>
+							</div>
+							<div class="large-4 medium-4 columns">
+								<img class="thumbnail" src="img/pollopapas.jpg"/>
+							</div>
+							<div class="large-4 medium-4 columns">
+								<img class="thumbnail" src="img/heladoaguacate.jpg"/>
+							</div>
+						</div>
+					</div>
 					<br/>
-					<h4>Favoritos:</h4>
+					<!--Seccion hisorial que se oculta en pantallas "small"-->
+					<table class="hover hide-for-small-only">
+						<thead>
+							<tr>
+							  <th><h4>Historial:</h4></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							  <td><a href="#">Tamales explosivos</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Pasta con albondiga</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Perro Caliente</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Chuleton horneado</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Torta de piña</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Mondogo</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Pescado frito</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Arroz a la marinera</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Guarapa de frutas</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Dulce de leche</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Arepa frita con aguacate</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Muchacho redondo ordeado</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Pasticho de berengena</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Arepitas dulce de canela</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Carne de lentejas</a></td>
+							</tr>
+							<tr>
+							  <td><a href="#">Yuca frita con salsa</a></td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-			<div class="large-8 medium-8 small-3 columns">
+			<!--Seccion de publicaciones del blog-->
+			<div class="large-8 medium-8 small-12 columns">
 				<div class="callout">
-					
 					<h3>Mortal Kombat</h3>
-					<script>
-						var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-						var f = new Date();
-						document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
-					</script>
+					<p class="fecha-publicacion">10 de Noviembre del 2019</p>
 					<hr>
-					<img src="img/panconmortadela.jpg"/>
+					<img class="thumbnail" src="img/panconmortadela.jpg"/>
 					<p> 
-							Todo amante de los juegos de video conocen Mortal Kombat, un juego de lucha en 2D que gracias a su realismo y gore
-							llego a la fama mundial. Aqui no voy a escribir sobre el video juego, yo voy a escribir sobre comida, si leiste bien,
-							sobre comida.  
+							Todo amante de los juegos de video conoce Mortal Kombat, un juego de lucha en 2D que gracias a su realismo y gore llego a la fama mundial. 
+							Aquí no voy a escribir sobre el video juego, yo voy a escribir sobre comida, si leíste bien, sobre comida.   
 					</p>
 					<p>						
-							En Venezuela existe un plato "tipico" llamado Mortal Kombat y es de los mas faciles de preparar, solo necesitas
-							Mortadela y Pan jajajajajaja. Mortal = Mortadela y Kombat es por que entras en combate con el hambre que tienes y al
-							final terminas con un Flawless Victori (Victoria Impecable) ya que tu estomago queda lleno y tu corazon feliz jajajaja.
-							Este "plato" es fenomenal combinado con un refresco, asi te sentiras mas lleno. El Mortal Kombat es muy implementado
-							cuando vas a un lugar donde estaras mucho tiempo divirtiendote con amigos, como por ejemplo, un concierto, una salida
-							al parque de diversion, un maraton de peliculas o una noche de video juegos, siempre encontraras un Mortal Kombat que 
-							amortigue (disminuya) tu hambre hasta que vuelvas a casa.
+							En Venezuela existe un plato "típico" llamado Mortal Kombat y es de los más fáciles de preparar, solo necesitas Mortadela 
+							y Pan jajajajajaja. Mortal = Mortadela y Kombat es porque entras en combate con el hambre que tienes y al final 
+							terminas con un Flawless Victori (Victoria Impecable) ya que tu estomago queda lleno y tu corazón feliz jajajaja. 
+							Este "plato" es fenomenal combinado con un refresco, así te sentirás más lleno. El Mortal Kombat es muy implementado 
+							cuando vas a un lugar donde estarás mucho tiempo divirtiéndote con amigos como, por ejemplo, un concierto, una 
+							salida al parque de diversión, un maratón de películas o una noche de video juegos, siempre encontraras un 
+							Mortal Kombat que amortigüe (disminuya) tu hambre hasta que vuelvas a casa. 
 					</p>
+					<!--Formulario para comentarios 1-->
 					<h5>Escribe un comentario:</h5>
 					<form>
 						<label>
@@ -75,30 +163,57 @@
 							<textarea placeholder="Escribe tu comentario"></textarea>
 						</label>
 						<div class="clearfix">
-							<input type="submit" class="button float-right" value="Publicar">
+							<input type="submit" class="success button float-right" value="Publicar">
 						</div>
-					</form>	
+					</form>
+					<!--Seccion de comentarios publicados 1-->
+					<table class="hover">
+						<tbody>
+							<tr>
+								<td>
+									<i class="fi-torso size-72"></i>
+								</td>
+								<td>
+									<span class="text-left"><b>Alejandro:</b> jajajajaja me parece muy cómico tu forma de escribir, pero debería prestar atención a los horrores ortográficos jajajajaja me parece genial el Blog.</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fi-torso size-72"></i>
+								</td>
+								<td>
+									<span class="text-left"><b>RomanPXA:</b> Corto, extraño pero divertido. Recordé cuando de niño jugaba al Mortal Kombat.</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fi-torso-female size-72"></i>
+								</td>
+								<td>
+									<span class="text-left"><b>Patricia Velasquez:</b> Me encanta el Mortal Kombat :D combinado con quesito blanco y café</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="callout">
 					<h3>Cafecito con leche y pan</h3>
-					<script>
-						var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-						var f = new Date();
-						document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
-					</script>
+					<p class="fecha-publicacion">09 de Noviembre del 2019</p>
 					<hr>
-					<img src="img/cafeconlecheypan.jpg"/>
+					<img class="thumbnail" src="img/cafeconlecheypan.jpg"/>
 					<p> 
-						Con calor, frio, fiebre, hasma, durante depresiones, alegrias, jugando video juegos, teniendo sexo, leyendo, escribiendo,
-						pensando... cualquier momento es perfecto para tomarse un cafecito con pan. En Venezuela un cafecito con pan es tan preciado
-						que incluso lo escondes cuando quieres comertelo caleta (solo) jajajajaja se puede combinar con queso blanco rallado dentro del pan
-						o cubitos de quesos blanco flotanto en el cafecito con leche. Los hay para todo gustos de colores.... clarito, marroncito u oscuro,
-						pero lo cierto es que algo tan sabroso debe ser disfrutado en cualquier color, es decir, sin racismo de ningun tipo jajajajaja
+						Con calor, frio, fiebre, asma, durante depresiones, alegrías, jugando video juegos, teniendo sexo, leyendo, escribiendo, 
+						pensando... cualquier momento es perfecto para tomarse un cafecito con pan. En Venezuela un cafecito con pan es tan 
+						preciado que incluso lo escondes cuando quieres comértelo caleta (solo) jajajajaja se puede combinar con queso blanco 
+						rallado dentro del pan o cubitos de quesos blanco flotando en el cafecito con leche. Los hay para todo gusto de 
+						colores.... clarito, marroncito u oscuro, pero lo cierto es que algo tan sabroso debe ser disfrutado en cualquier 
+						color, es decir, sin racismo de ningún tipo jajajajaja 
 					</p>
 					<p>						
-						Yo por mi parte me quedo con el queso dentro del pan... eso sono gay jajajajaja un cafecito con pan relleno de quesito blanco
-						rallado, mas cubitos de queso flotando es lo maximo. Si quieres conquistarl@ un cafecito con pan es un buen inicio.
+						Yo por mi parte me quedo con el queso dentro del pan... eso sonó gay jajajajaja un cafecito con pan relleno de quesito 
+						blanco rallado, más cubitos de queso flotando es lo máximo. Si quieres conquistarl@ un cafecito con pan es un buen inicio. 
 					</p>
+					<!--Formulario para comentarios 2-->
 					<h5>Escribe un comentario</h5>
 					<form>
 						<label>
@@ -110,11 +225,39 @@
 							<textarea placeholder="Escribe tu comentario"></textarea>
 						</label>
 						<div class="clearfix">
-							<input type="submit" class="button float-right" value="Publicar">
+							<input type="submit" class="success button float-right" value="Publicar">
 						</div>
 					</form>
+					<!--Seccion de comentarios publicados 2-->
+					<table class="hover">
+						<tbody>
+							<tr>
+								<td>
+									<i class="fi-torso-female size-72"></i>
+								</td>
+								<td>
+									<span class="text-left"><b>Francys:</b> Lo amooooo es lo mejor del mundo jajajaja a cualquier hora y en cualquier momento y con una TORTA GIGANTE mejor</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fi-torso size-72"></i>
+								</td>
+								<td>
+									<span class="text-left"><b>Luis Felipe:</b> Infaltable en mis horas de trabajo o disfrutando de NextFlix</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<i class="fi-torso-female size-72"></i>
+								</td>
+								<td>
+									<span class="text-left"><b>Roxy de Castillo:</b> ¡¡¡¡Que tal!!!! sabroso con cubitos de quesos flotando en el cafecito</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				
 			</div>
 		</div>
 		<script src="js/jquery.js"></script>
